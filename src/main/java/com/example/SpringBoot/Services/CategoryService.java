@@ -1,6 +1,7 @@
 package com.example.SpringBoot.Services;
 
 import com.example.SpringBoot.Model.Category;
+import org.springframework.http.ResponseEntity;
 
 import java.util.*;
 
@@ -12,6 +13,6 @@ public interface CategoryService {
 
     public String deleteCategory(long categoryId);
 
-    public String updateCategory(long categoryId,Category category);
+    public String updateCategory(long categoryId, Category category);
 
 }

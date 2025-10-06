@@ -1,8 +1,13 @@
 package com.example.SpringBoot.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity(name="Categories")
 public class Category {
     private String categoryName;
 
+    @Id
     private long categoryId;
 
     public Category(String categoryName,long categoryId){
